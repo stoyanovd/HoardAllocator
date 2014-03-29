@@ -1,0 +1,6 @@
+// compile (debug):   g++ --shared -std=c++11 -fPIC -g -o malloc-intercept.so malloc-intercept.cpp tracing.cpp allocator.cpp
+// compile (release): g++ --shared -std=c++11 -fPIC -O2 -o malloc-intercept.so malloc-intercept.cpp internals.cpp tracing.cpp
+// run (trace):       LD_PRELOAD=./malloc-intercept.so gedit
+// run (no trace):    LD_PRELOAD=./malloc-intercept.so MALLOC_INTERCEPT_NO_TRACE=1 gedit
+// view symbols:      objdump -T --demangle malloc-intercept.so
+
