@@ -21,6 +21,7 @@ r and b files in root directory is compiled files of malloc-testing-master/rando
 malloc-intercept.so is compiled and linked allocator library.
 mymake contains commands to compile allocator and commands to run programs with this allocator.
 
-Notice! if you want to run gedit: firstly close all gedit's windows.
+Notice! 
+if you want to run gedit: firstly close all gedit's windows.
 
 
