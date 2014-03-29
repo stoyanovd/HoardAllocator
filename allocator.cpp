@@ -519,7 +519,7 @@ namespace malloc_intercept
 		if (heap != commonHeap)
 		{
 			if (heap->usedMemory + K * SIZE_OF_SUPERBLOCK < heap->allocatedMemory
-				&& heap->usedMemory < (1 - FRACTION) * heap->allocatedMemory /*true*/)
+				&& heap->usedMemory < (1 - FRACTION) * heap->allocatedMemory)
 			{
 				commonHeap->lock();
 				SuperBlock* minUsedBlock = NULL;
